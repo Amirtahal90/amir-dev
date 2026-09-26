@@ -1532,3 +1532,9 @@ html[data-theme="dark"] .theme-icon-light { display: block; }
 @supports not (color-mix(in srgb, white, black)) {
   .site-header { background: var(--bg); }
 }
+
+@media (min-width: 1440px) {
+  :root { --container: 1260px; }
+  .hero-grid { gap: 90px; }
+  .section { padding-block: 108px; }
+}
