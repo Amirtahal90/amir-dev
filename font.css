@@ -1,0 +1,57 @@
+/* =========================================================
+   Amir Dev — Persian typography
+   One shared font entrypoint for every page.
+   ========================================================= */
+
+/* Primary Persian UI family: Vazirmatn, multiple weights for
+   body, headings, buttons, labels and compact UI. */
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap");
+
+/* Optional display family for selected large headings. */
+@import url("https://fonts.googleapis.com/css2?family=Estedad:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-ui: "Vazirmatn", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Estedad", "Vazirmatn", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-ui);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-font {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+code,
+pre,
+.code-body,
+[dir="ltr"] code {
+  font-family: var(--font-mono);
+}
+
+/* Handy typography utilities for future edits. */
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
