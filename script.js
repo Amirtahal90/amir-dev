@@ -8,6 +8,9 @@
 
   const page = body.dataset.page || "";
 
+  // Keep the document language metadata explicit for accessibility tools.
+  root.lang = "fa";
+
   const iconRefresh = () => {
     if (window.lucide && typeof window.lucide.createIcons === "function") {
       window.lucide.createIcons();
